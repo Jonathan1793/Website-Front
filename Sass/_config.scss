@@ -1,0 +1,96 @@
+$color-blue: #2476ff;
+$light-grey: #677788;
+$color-white: #ffffff;
+$font-family-default: "Inter", sans-serif;
+$font-small: 14px;
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  body {
+    font-family: $font-family-default;
+    padding: 10px;
+  }
+}
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin btn-layout {
+  border: 0.0625rem solid transparent;
+  background-color: $color-blue;
+  border-radius: 1.875rem;
+  color: $color-white;
+  text-align: center;
+  padding: 0.9375rem;
+
+  a {
+    text-decoration: none;
+    color: $color-white;
+  }
+}
+
+@mixin small-img-icon {
+  width: 60px;
+  height: 60px;
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: $color-white;
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
+  @include center-flex;
+
+  img {
+    width: 80%;
+  }
+}
+
+@mixin lg-img-icon {
+  width: 5rem;
+  height: 80px;
+  border: 1px solid transparent;
+  padding: 16;
+  border-radius: 40px;
+  background-color: $color-white;
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
+  @include center-flex;
+
+  img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@mixin Sketch-btn {
+  border: 0.0625rem solid transparent;
+  border-radius: 0.9375rem;
+  background-color: #01c9a7;
+  color: $color-white;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px), (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-md {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin media-sm {
+  @media screen and (max-width: 420px) {
+    @content;
+  }
+}

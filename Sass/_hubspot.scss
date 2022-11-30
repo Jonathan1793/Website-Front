@@ -1,0 +1,47 @@
+.hubspot {
+  width: 100%;
+  display: flex;
+  margin-bottom: 7rem;
+
+  &-left {
+    width: 50%;
+    position: relative;
+    .woman-left {
+      width: 77%;
+
+      position: absolute;
+      top: -29%;
+      right: 12%;
+    }
+    .dots {
+      width: 40%;
+      height: auto;
+    }
+  }
+  &-right {
+    width: 50%;
+    img {
+      width: 20%;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+    h4 {
+      font-size: 1.375rem;
+      font-weight: 500;
+      line-height: 2.25rem;
+    }
+
+    .person {
+      margin-top: 3rem;
+      h4 {
+        font-weight: 700;
+        font-size: 1.125rem;
+      }
+      p {
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: $light-grey;
+      }
+    }
+  }
+}

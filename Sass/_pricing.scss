@@ -1,0 +1,154 @@
+.pricing {
+  width: 100%;
+  margin: 7rem 20px;
+  .title {
+    margin-bottom: 5rem;
+    h3 {
+      font-size: 26px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $light-grey;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+}
+.plans-features-list {
+  display: flex;
+  gap: 3.75rem;
+  align-items: center;
+}
+.plan {
+  width: 35%;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 16px rgba($color: #000000, $alpha: 0.2);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  gap: 50px;
+  &-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+
+    &-price {
+      width: 100%;
+      display: flex;
+      gap: 2px;
+      justify-content: flex-start;
+      position: relative;
+
+      span {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+      }
+      .plan-period {
+        display: flex;
+        width: 15%;
+        position: relative;
+        p {
+          color: $light-grey;
+          font-size: 20px;
+          line-height: 23px;
+          position: absolute;
+          bottom: 8px;
+          right: -10px;
+        }
+      }
+    }
+    p {
+      color: #677788;
+      font-size: 1rem;
+      line-height: 24px;
+    }
+  }
+
+  .divider {
+    border: 1px solid rgba($color: #8d8d8d, $alpha: 0.5);
+    width: 110%;
+    height: 0;
+    margin: 20px 0;
+  }
+  &-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 10px;
+    a {
+      @include btn-layout;
+      text-decoration: none;
+      font-size: 12px;
+      @include center-flex;
+      padding: 15px 25px;
+
+      i {
+        margin-right: 10px;
+        font-size: 18px;
+      }
+    }
+    p {
+      font-size: 12px;
+      color: #677788;
+    }
+  }
+}
+
+.plan-features {
+  width: 100%;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  .row-1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 5%;
+    .feature {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      img {
+        width: 18%;
+        height: auto;
+      }
+
+      div {
+        display: flex;
+        gap: 10px;
+        h3 {
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 21px;
+        }
+        a {
+          @include Sketch-btn;
+        }
+      }
+
+      p {
+        font-size: 0.875rem;
+        color: $light-grey;
+        line-height: 22px;
+        width: 75%;
+        font-weight: 500;
+      }
+    }
+  }
+}

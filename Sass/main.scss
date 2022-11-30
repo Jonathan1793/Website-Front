@@ -1,0 +1,48 @@
+@import "config", "heroSection", "animations", "benefits", "banner-section",
+  "why-front", "banner-play", "hubspot", "brands", "pricing", "hire-us",
+  "footer", "responsive";
+
+.nav {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+  gap: 7px;
+  &-logo {
+    width: 154.9px;
+    height: 47px;
+  }
+  &-menu {
+    margin-left: auto;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $light-grey;
+          margin-right: 20px;
+          font-family: $font-family-default;
+          font-weight: 500;
+          font-size: $font-small;
+
+          &:hover {
+            color: $color-blue;
+            transition: 0.5;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  &-btn {
+    width: 102px;
+    height: 45px;
+    @include btn-layout;
+    @include center-flex;
+  }
+}

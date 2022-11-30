@@ -1,0 +1,39 @@
+.banner-section {
+  margin: 5rem 0;
+  display: flex;
+  padding-left: 1rem;
+  align-items: center;
+  gap: 20px;
+  background-color: #f8fafe;
+
+  &-left {
+    width: 40%;
+    h3 {
+      font-size: 1.625rem;
+      font-weight: 500;
+      margin-bottom: 1.25rem;
+    }
+
+    & > div {
+      @include btn-layout;
+      width: 38%;
+
+      a {
+        @include center-flex;
+        gap: 10px;
+        i {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  &-right {
+    width: 60%;
+    padding-top: 18%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
