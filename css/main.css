@@ -1,6 +1,8 @@
 @charset "UTF-8";
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -9,6 +11,8 @@ html {
   padding: 0;
 }
 * body {
+  width: 100%;
+  overflow-x: hidden;
   font-family: "Inter", sans-serif;
   padding: 10px;
 }
@@ -1150,10 +1154,6 @@ html {
 }
 
 @media screen and (min-width: 1024px), (max-width: 1024px) {
-  body {
-    width: 100vw;
-    padding: 30px;
-  }
   .nav i {
     visibility: hidden;
     width: 0;
@@ -1435,9 +1435,9 @@ html {
     width: 45%;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   body {
-    width: 100vw;
+    max-width: 100vw;
   }
   .container {
     width: 100%;

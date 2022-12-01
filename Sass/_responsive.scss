@@ -1,8 +1,4 @@
 @include media-lg {
-  body {
-    width: 100vw;
-    padding: 30px;
-  }
   .nav {
     i {
       visibility: hidden;
@@ -325,7 +321,7 @@
 
 @include media-sm {
   body {
-    width: 100vw;
+    max-width: 100vw;
   }
   .container {
     width: 100%;

@@ -6,6 +6,8 @@ $font-small: 14px;
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
@@ -13,6 +15,8 @@ html {
   padding: 0;
 
   body {
+    width: 100%;
+    overflow-x: hidden;
     font-family: $font-family-default;
     padding: 10px;
   }
@@ -90,7 +94,7 @@ html {
   }
 }
 @mixin media-sm {
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 430px) {
     @content;
   }
 }
